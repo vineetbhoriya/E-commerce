@@ -40,14 +40,14 @@ const people = [
         address: "Hn.250 patel nagar",
         city: "Delhi",
         pin: 112145,
-        phone: 789456121,
+        phone: 7894561211,
     },
     {
         name: 'Jones',
         address: "Hn.550 Rajendera nagar",
         city: "Delhi",
         pin: 13223,
-        phone: 855456121,
+        phone: 8554561215,
     },
 
 ]
