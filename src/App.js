@@ -4,7 +4,8 @@ import Home from "./pages/Home"
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import Cart from "./features/cart/cart"
-
+import Checkout from './pages/checkout';
+import ProductDetailsPage from './pages/productDetailsPage';
 import * as ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
@@ -15,19 +16,27 @@ import "./index.css";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home>Hello world!</Home>,
+    element: <Home></Home>,
   },
   {
     path: "/login",
-    element: <LoginPage>Hello world!</LoginPage>,
+    element: <LoginPage></LoginPage>,
   },
   {
     path: "/signup",
-    element: <SignupPage>Hello world!</SignupPage>,
+    element: <SignupPage></SignupPage>,
   },
   {
     path: "/cart",
-    element: <Cart>Hello world!</Cart>,
+    element: <Cart></Cart>,
+  },
+  {
+    path: "/checkout",
+    element: <Checkout></Checkout>,
+  },
+  {
+    path: "/productdetails",
+    element: <ProductDetailsPage></ProductDetailsPage>,
   },
 
 ]);
