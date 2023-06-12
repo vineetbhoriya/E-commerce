@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import Home from "./pages/Home"
-import Login from './pages/LoginPage';
-import Signup from './pages/SignupPage';
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
+import Cart from "./features/cart/cart"
 
 import * as ReactDOM from "react-dom/client";
 import {
@@ -18,11 +19,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <Login>Hello world!</Login>,
+    element: <LoginPage>Hello world!</LoginPage>,
   },
   {
     path: "/signup",
-    element: <Signup>Hello world!</Signup>,
+    element: <SignupPage>Hello world!</SignupPage>,
+  },
+  {
+    path: "/cart",
+    element: <Cart>Hello world!</Cart>,
   },
 
 ]);
