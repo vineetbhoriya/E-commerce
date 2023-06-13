@@ -1,9 +1,9 @@
-import React from 'react'
-import cart from "../features/cart/cart"
-export default function CartPage() {
-  return (
-    <cart>
-      
-    </cart>
-  )
+import Cart from "../features/cart/cart";
+
+function CartPage() {
+    return <div>
+        <Cart></Cart>
+    </div>;
 }
+
+export default CartPage;

@@ -1,50 +1,43 @@
-import React from 'react';
 import './App.css';
-import Home from "./pages/Home"
+import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
-import Cart from "./features/cart/cart"
-import Checkout from './pages/checkout';
-import ProductDetailsPage from './pages/productDetailsPage';
-import * as ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import "./index.css";
 
+import {createBrowserRouter,RouterProvider} from 'react-router-dom';
+import CartPage from './pages/cartPage';
+import Checkout from './pages/checkout';
+import ProductDetailPage from './pages/ProductDetailPage';
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Home></Home>,
   },
   {
-    path: "/login",
+    path: '/login',
     element: <LoginPage></LoginPage>,
   },
   {
-    path: "/signup",
+    path: '/signup',
     element: <SignupPage></SignupPage>,
   },
-  {
-    path: "/cart",
-    element: <Cart></Cart>,
+  { 
+    path: '/cart',
+    element: <CartPage></CartPage>,
   },
-  {
-    path: "/checkout",
+  { 
+    path: '/checkout',
     element: <Checkout></Checkout>,
   },
-  {
-    path: "/productdetails",
-    element: <ProductDetailsPage></ProductDetailsPage>,
+  { 
+    path: '/product-detail',
+    element: <ProductDetailPage></ProductDetailPage>,
   },
-
 ]);
 
 function App() {
   return (
     <div className="App">
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </div>
   );
 }
